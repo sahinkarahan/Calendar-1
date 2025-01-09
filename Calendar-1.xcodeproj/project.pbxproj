@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		20CA0A1B2D2EF359009BBEDB /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 20CA0A1A2D2EF359009BBEDB /* Auth */; };
+		20CA0A1D2D2EF359009BBEDB /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 20CA0A1C2D2EF359009BBEDB /* Functions */; };
+		20CA0A1F2D2EF359009BBEDB /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 20CA0A1E2D2EF359009BBEDB /* PostgREST */; };
+		20CA0A212D2EF359009BBEDB /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 20CA0A202D2EF359009BBEDB /* Realtime */; };
+		20CA0A232D2EF359009BBEDB /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 20CA0A222D2EF359009BBEDB /* Storage */; };
+		20CA0A252D2EF359009BBEDB /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 20CA0A242D2EF359009BBEDB /* Supabase */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		20A6CA0E2D2EB9DA00ED5201 /* Calendar-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calendar-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +32,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20CA0A1F2D2EF359009BBEDB /* PostgREST in Frameworks */,
+				20CA0A1D2D2EF359009BBEDB /* Functions in Frameworks */,
+				20CA0A252D2EF359009BBEDB /* Supabase in Frameworks */,
+				20CA0A1B2D2EF359009BBEDB /* Auth in Frameworks */,
+				20CA0A232D2EF359009BBEDB /* Storage in Frameworks */,
+				20CA0A212D2EF359009BBEDB /* Realtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +80,12 @@
 			);
 			name = "Calendar-1";
 			packageProductDependencies = (
+				20CA0A1A2D2EF359009BBEDB /* Auth */,
+				20CA0A1C2D2EF359009BBEDB /* Functions */,
+				20CA0A1E2D2EF359009BBEDB /* PostgREST */,
+				20CA0A202D2EF359009BBEDB /* Realtime */,
+				20CA0A222D2EF359009BBEDB /* Storage */,
+				20CA0A242D2EF359009BBEDB /* Supabase */,
 			);
 			productName = "Calendar-1";
 			productReference = 20A6CA0E2D2EB9DA00ED5201 /* Calendar-1.app */;
@@ -94,6 +115,9 @@
 			);
 			mainGroup = 20A6CA052D2EB9DA00ED5201;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				20CA0A192D2EF359009BBEDB /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 20A6CA0F2D2EB9DA00ED5201 /* Products */;
 			projectDirPath = "";
@@ -322,6 +346,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		20CA0A192D2EF359009BBEDB /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		20CA0A1A2D2EF359009BBEDB /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 20CA0A192D2EF359009BBEDB /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		20CA0A1C2D2EF359009BBEDB /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 20CA0A192D2EF359009BBEDB /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		20CA0A1E2D2EF359009BBEDB /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 20CA0A192D2EF359009BBEDB /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		20CA0A202D2EF359009BBEDB /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 20CA0A192D2EF359009BBEDB /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		20CA0A222D2EF359009BBEDB /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 20CA0A192D2EF359009BBEDB /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		20CA0A242D2EF359009BBEDB /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 20CA0A192D2EF359009BBEDB /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 20A6CA062D2EB9DA00ED5201 /* Project object */;
 }
